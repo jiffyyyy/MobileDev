@@ -1,152 +1,157 @@
 /*NavBar*/
-.navbar{
+.navbar {
   height: 50px;
   background-color: #003580;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
-.navContainer{
+.navContainer {
   width: 100%;
   max-width: 1024px;
-  color:white;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo{
+.logo {
   font-weight: 500;
-
 }
 
-.navButton{
+.navButton {
   margin-left: 20px;
   border: none;
   padding: 5px 10px;
   cursor: pointer;
+
   color: #003580;
 }
 
-
 /*Header*/
-.header{
+.header {
   background-color: #003580;
-  color:white;
+  color: white;
   display: flex;
   justify-content: center;
   position: relative;
+
+}
+
+.headerContainer {
+  width: 100%;
+  max-width: 1024px;
+  margin: 20px;
+  margin-bottom: 50px;
   
 }
 
-.headerContainer{
-  width: 100%;
-  max-width: 1024px;
-  margin: 20px 0 0 0;
-  margin-bottom: 50px;
-}
-
-.headerList{
+.headerList {
   display: flex;
   gap: 40px;
   margin-bottom: 50px;
+  
 }
 
-.headerListItem{
+.headerListItem {
   display: flex;
   align-items: center;
   gap: 10px;
+  
 }
 
-
-.headerListItem.active{
+.headerListItem.active {
   border: 1px solid white;
   padding: 10px;
   border-radius: 20px;
 }
 
-
-.haderDescription{
+.haderDescription {
   margin: 20px 0px;
-
 }
 
-.headerBtn{
+.headerBtn {
   background-color: #0071c2;
   padding: 5px 10px;
   color: white;
   font-weight: 500;
-  border: 10px;
+  border: 20px;
   cursor: pointer;
+  height: 40px;
+  width: 140px;
+}
+.headerBtns {
+  background-color: #0071c2;
+  padding: 5px 10px;
+  color: white;
+  font-weight: 500;
+  border: 20px;
+  cursor: pointer;
+  height: 40px;
+  width: 80px;
 }
 
-
-.headerSearch{
+.headerSearch {
   height: 30px;
   background-color: white;
   border: 3px solid #febb02;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding:10px 0;
+  padding: 10px 0;
   border-radius: 5px;
   position: absolute;
   bottom: -25px;
   width: 100%;
   max-width: 1024px;
-
-
+  
 }
 
-.headerIcon{
-  color: lightgray;
+.headerIcon {
+  color:grey;
 }
 
-.headerSearchItem{
+.headerSearchItem {
   display: flex;
   align-items: center;
   gap: 10px;
+  color:gray;
 }
 
-.headerSearchInput{
+.headerSearchInput {
   border: none;
   outline: none;
-
 }
 
-.headerSearchText{
-  color: lightgray;
+.headerSearchText {
+  color: #444;
   cursor: pointer;
 }
-
-
-.date{
+.date {
   position: absolute;
   top: 50px;
   z-index: 2;
 }
 
-
-.options{
+.options {
   z-index: 2;
   position: absolute;
   top: 50px;
   background-color: white;
   color: grey;
   border-radius: 5px;
-  box-shadow: 0 0 10px -5px rgba(0,0,0,0.4);
+  box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.4);
 }
 
-
-.optionsItem{
+.optionsItem {
   width: 200px;
   display: flex;
   justify-content: space-between;
   margin: 10px;
 }
 
-
-.optionCounter{
+.optionCounter {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -154,37 +159,32 @@
   color: black;
 }
 
-.optionCounterButton{
+.optionCounterButton {
   width: 30px;
   height: 30px;
   border: 1px solid #0071c2;
   color: #0071c2;
   cursor: pointer;
   background-color: white;
-
 }
 
-.optionCounterButton.disabled{
+.optionCounterButton.disabled {
   cursor: not-allowed;
 }
 
-
 /*Home container*/
-.homeContainer{
+.homeContainer {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
 }
-
-.homeTitle{
+.homeTitle {
   width: 1024px;
-  font-size: 20px
+  font-size: 20px;
 }
-
-/*featured*/
-.featured{
+.featured {
   width: 100%;
   max-width: 1024px;
   display: flex;
@@ -193,7 +193,7 @@
   z-index: 1;
 }
 
-.featuredItem{
+.featuredItem {
   position: relative;
   color: white;
   border-radius: 10px;
@@ -202,143 +202,138 @@
   flex: 1;
 }
 
-.featuredImg{
+.featuredImg {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-.featuredTitle{
+.featuredTitle {
   position: absolute;
   bottom: 20px;
   left: 20px;
 }
-
-/*PropertyList*/
-.propertyList{
+/*propertyList*/
+.propertyList {
   width: 100%;
   max-width: 1024px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
-
-.propertyItem{
+.propertyItem {
   flex: 1;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
 }
-
-.propertyImg{
+.propertyImg {
   width: 100%;
   height: 150px;
   object-fit: cover;
 }
-
-.propertyTitle>h1{
+.propertyTitle > h1 {
   font-size: 18px;
   color: #444;
-
+  margin: 1px;
 }
-
-.propertyTitle>h2{
-  font-size: 14px;
+.propertyTitle > h2 {
+  font-size: 13px;
+  margin: 1px;
   font-weight: 300;
-
+  color: darkgrey;
 }
-
 /*FeaturedProperties*/
-.FeaturedProperties{
-   width: 100%;
+.FeaturedProperties {
+  width: 100%;
   max-width: 1024px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  z-index: 1;
 }
-
-.FeaturedPropertiesItem{
-  position: relative;
-  color: white;
+.FeaturedPropertiesItem {
+  flex: 1;
   border-radius: 10px;
   overflow: hidden;
-  height: 250px;
-  flex: 1;
+  cursor: pointer;
 }
-
-.FeaturedPropertiesImg{
-   width: 100%;
-  height: 150px;
+.FeaturedPropertiesImg {
+  width: 100%;
+  height: 250px;
   object-fit: cover;
 }
-
-.FeaturedPropertiesTitle>h1{
-  font-size: 18px;
+.FeaturedPropertiesTitle > h1 {
+  font-size: 16px;
   color: #444;
 }
-
-.FeaturedPropertiesTitle>h2{
-  font-size: 14px;
-  font-weight: 300;
-  color: #444;
+.FeaturedPropertiesTitle > h2 {
+  font-size: 15px;
+  font-weight: 200;
 }
-
-.FeaturedPropertiesTitle>h3{
-  font-size: 14px;
-  color: #696969;
-  font-weight: 300;
+.FeaturedPropertiesTitle > p {
+  font-size: 13px;
+  color: gray;
 }
-
-/**/
-.fpRating>button{
+.FeaturedPropertiesb > button {
   background-color: #003580;
   color: white;
   border: none;
   padding: 3px;
   margin-right: 10px;
-  font-weight: bold;
+  font-weight: 14 px;
 }
-
-.fpRating>span{
+.FeaturedPropertiesb > span {
   font-size: 14px;
 }
-
-.MailListcontainer{
-  text-align: center;
-  background-color: #003580;
+/*maliList*/
+.maiList {
   width: 100%;
-  height: 100%;
-}
 
-.MailListTitle>h1{
+  background-color: #003580;
   color: white;
+  display: flex;
+  justify-content: center;
+  height: 250px;
 }
 
-.MailListTitle>h5{
+.maliContainer {
+  width: 100;
+  max-width: 1024px;
   color: white;
+  margin: 20px 0px;
+  text-align: center;
+  font-size: 18px;
+}
+.maliContainer > p {
+  font-size: 17px;
+}
+.maliContainer > input {
+  height: 40px;
+  width: 290px;
+
+  border: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: white;
+  border-radius: 6px;
 }
 
-/**/
-.form-inline>button{
-  width: 60px;
-  height: 30px;
+.maliContainer > button {
+  height: 40px;
+  margin-left: 10px;
+  border: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
   background-color: #0071c2;
-  border-radius: 15%;
+  color: white;
+  border-radius: 6px;
 }
-
-.form-inline>input{
-  width: 100px;
-  height: 50px;
-
-}
-
 /*Footer*/
 .footerItems {
   justify-content: space-between;
   display: flex;
-  max-width: 1024px;
+  max-width: 1600px;
   margin-left: 100px;
+
 }
 .row {
   border: none;
@@ -348,38 +343,14 @@
   margin-right: 100px;
   font-size: 13px;
 }
-
-.mlContainer{
-  height: 200px;
-  width: 100%;
-  background-color: #003580;
-  justify-content: center;
-  text-align: center;
-  color: white;
+/*Font*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Sora+Sompeng&display=swap");
+body {
+  margin: 0;
+  font-family: "Noto Sans Sora Sompeng", sans-serif;
 }
-
-.inputEmail>button{
-  background-color: #1c5bb8;
-  border-radius: 10px;
-  color: white;
-  margin-left: 5px;
-  font-size: 14px;
-  border-style: none;
-  padding-top: 15px ;
-  padding-bottom: 15px;
-}
-
-.inputEmail>input{
-  border-radius: 10px;
-  width: 300px;
-  padding-top: 15px ;
-  padding-bottom: 15px;
-  border-style: none;
-}
-
-/*List*/
-
-.listContainer{
+/**/
+.ListContainer{
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -387,9 +358,10 @@
 
 .listWrapper{
   width: 100%;
-  max-width: 1024px;
+  max-width:1024px;
   display: flex;
-  gap: 20px;
+  gap:20px
+
 }
 
 .listSearch{
@@ -398,15 +370,16 @@
   padding: 10px;
   border-radius: 10px;
   position: sticky;
-  top: 10px;
+  top:10px;
   height: max-content;
+
 }
 
 .listResult{
-  flex: 3;
+  flex : 3 ;
 }
 
-.lsTitle{
+.lititle{
   font-size: 20px;
   color: #555;
   margin-bottom: 10px;
@@ -418,31 +391,30 @@
   gap: 5px;
   margin-bottom: 10px;
 }
-
 .lsItem>label{
-  font-size: 12px;
+font-size: 12px;
 }
-
 .lsItem>input{
-  height: 30px;
-  border: none;
-  padding: 5px;
+height: 30px;
+border: none;
+padding: 5px;
 }
-
 .lsItem>span{
-  height: 30px;
-  padding: 5px;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+height: 30px;
+padding: 5px;
+background-color: white;
+display: flex;
+align-items: center;
+cursor: pointer;
 }
 
-.lsOptions{
+.lsOptons{
   padding: 10px;
 }
 
-.lsOptionItem{
+
+
+.lsOpenItem{
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
@@ -450,7 +422,7 @@
   font-size: 12px;
 }
 
-.lsOptionsInput{
+.lsOptionInput{
   width: 50px;
 }
 
@@ -462,129 +434,219 @@
   border: none;
   font-weight: 500;
   cursor: pointer;
-
 }
-
-/*.Search Item*/
-
-
+/*searchItem*/
 .searchItem{
   border: 1px solid lightgray;
   padding: 10px;
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
-  gap:20px;
+  gap: 20px;
   margin-bottom: 20px;
 }
-
-
 .siImg{
   width: 200px;
   height: 200px;
   object-fit: cover;
-}
 
+}
 .siDesc{
   display: flex;
   flex-direction: column;
   gap: 10px;
   flex: 2;
 }
-
 .siTitle{
   font-size: 20px;
   color: #0071c2;
-
 }
-
 .siDistance{
   font-size: 12px;
 }
-
 .siTaxiOp{
   font-size: 12px;
   background-color: #008009;
-  color: white;
+  color: aliceblue;
   width: max-content;
   padding: 3px;
   border-radius: 5px;
 }
-
-.siSubTitle{
+.siSubtitle{
   font-size: 12px;
   font-weight: bold;
-
 }
-
 .siFeatures{
   font-size: 12px;
 }
-
 .siCancelOp{
   font-size: 12px;
   font-weight: bold;
   color: #008009;
-
 }
-
-.siCancelOpSubtitle{
+.CancelOpsubtitle{
   font-size: 12px;
   color: #008009;
 }
-
 .siDetails{
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
-
 .siRating{
   display: flex;
   justify-content: space-between;
 }
-
 .siRating>span{
   font-weight: 500;
 }
-
-
 .siRating>button{
-  background-color: #003580;
-  color:white;
-  padding: 5px;
-  font-weight: bold;
-  border: none;
+background-color: #003580;
+color: white;
+padding: 5px;
+font-weight: bold;
+border: none;
 }
-
-
-.siDetailsTexts{
-  text-align: right;
+.siDetailTexis{
+  text-align:right ;
   display: flex;
   flex-direction: column;
   gap: 5px;
-
 }
 
 
 .siPrice{
   font-size: 24px;
-
 }
-
-
 .siTaxOp{
   font-size: 12px;
   color: gray;
 }
-
 .siCheckButton{
-  background-color: #0071c2;
-  color: white;
+  background-color: #003580;
+  color:aliceblue;
   font-weight: bold;
   padding: 10px 5px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
 }
+
+/*Hotel*/
+.hotelsContainer1{
+  max-width: 1024px;
+  color: #000;
+  display: flex;
+  cursor: pointer;
+  margin-left: 260px;
+  flex-direction: column;
+}
+
+.hotelcontainerDetail{
+  margin-top: 10px;
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+ .hotellist {
+  width: 100%;
+  max-width: 1024px;
+  color:#000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.navsButton {
+  font-weight: 300;
+  padding: 12px 10px;
+  background-color: #0071c2;
+  color: white;
+  border-radius: 5px;
+  border: 10px;
+  cursor: pointer;
+  
+ 
+} 
+/*hotel*/
+.hotelItem{
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+ .title{
+  color: #0071c2;
+  margin-bottom: 15px;
+ }
+ .hoteltitle{
+  color: #008009;
+  margin-bottom: 10px;
+ }
+
+
+ /*Hotelitem*/
+
+
+.hotels{
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-gap: 5px;
+  z-index: 1;
+}
+
+.hotelsItem {
+width: 100%;
+}
+
+.hotelImg  {
+  width: 100%;
+ 
+}
+
+.text1{
+  font-size: 13px;
+  text-align: left ;
+  display: flex;
+  justify-content: space-between;
+  gap: 2;
+}
+
+.detailhotel{
+  height: 230px;
+  background-color: #cbe9ff;
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.texts{
+  font-size: 20px;
+  color:#555;
+
+}
+.hrtext1{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.textss{
+  font-size: 20px;
+}
+
+.navsButtons{
+  font-weight: 300;
+  padding: 12px 10px;
+  background-color: #0071c2;
+  color: white;
+  border-radius: 5px;
+  border: 10px;
+  cursor: pointer;
+  margin-left: 80px;
+}
+
+

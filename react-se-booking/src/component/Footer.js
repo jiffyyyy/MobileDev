@@ -11,6 +11,7 @@ const Footer = () => {
           <p>Districts</p>
           <p>Airports</p>
           <p>Hotels</p>
+          <p>Places of interest</p>
         </div>
         <div className="row">
           <p>Homes</p>
@@ -18,6 +19,7 @@ const Footer = () => {
           <p>Resorts</p>
           <p>Villas</p>
           <p>Hostels</p>
+          <p>B&Bs</p>
           <p>Guest houses</p>
         </div>
         <div className="row">
@@ -26,6 +28,7 @@ const Footer = () => {
           <p>Unpacked : Travel artcies</p>
           <p>Travel communities</p>
           <p>Seasonal and holiday deals</p>
+          <p>Travel Review Awards</p>
         </div>
         <div className="row">
           <p>Car rental</p>
